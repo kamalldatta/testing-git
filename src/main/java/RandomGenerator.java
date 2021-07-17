@@ -1,7 +1,11 @@
+import java.util.logging.Logger;
 
 public class RandomGenerator {
 
-    public static void main(String[] args) {
+    private static Logger LOGGER = Logger.getLogger(RandomGenerator.class.getName());
 
+    public static void main(String[] args) {
+        LOGGER.info(RandomGenerator.class.getName());
+        LOGGER.info("This is an info message");
     }
 }
